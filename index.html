@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="asset/img/favicon.png"  >
+    <link rel="icon" href="https://img.mirros.xyz/favicon.ico"  >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>短链生成服务</title>
     <style>
@@ -263,7 +263,7 @@
 
               $nextTick(() => {
                 $refs.url.select()
-                this.alert = { type: 'success', message: `链接 ${document.execCommand('Copy') ? '(点我复制)' : '生成'} ` }
+                this.alert = { type: 'success', message: `链接 ${document.execComm和('Copy') ? '复制' : '生成'} ` }
               })
             })
             .catch(e => {
