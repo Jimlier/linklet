@@ -208,10 +208,10 @@
       <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
       <input placeholder="输入要缩短的网址..." x-model="url" x-ref="url" />
       <details>
-        <summary>自定义设置</summary>
+        <summary>自定义后缀</summary>
         <div>
           <input placeholder="slug" x-model="slug" />
-          <small>不设置则随机生成 slug</small>
+          <small>不设置则随机生成</small>
         </div>
       </details>
       <button :class="{ loading }" :disabled="loading || isValidated()" @click="submit($refs, $nextTick)">生成</button>
