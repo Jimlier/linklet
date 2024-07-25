@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="https://img.mirros.xyz/favicon.ico"  >
+    <link rel="icon" href="asset/img/favicon.png"  >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>短链生成服务</title>
+    <title>短链生成器</title>
     <style>
       :root {
         --color-primary: #5c7cfa;
@@ -203,12 +203,12 @@
     </style>
   </head>
   <body>
-    <header><h1>短链生成服务</h1></header>
+    <header><h1>短链生成器</h1></header>
     <main x-data="app" x-cloak>
       <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
       <input placeholder="输入要缩短的网址..." x-model="url" x-ref="url" />
       <details>
-        <summary>自定义后缀</summary>
+        <summary>自定义链接后缀</summary>
         <div>
           <input placeholder="slug" x-model="slug" />
           <small>不设置则随机生成</small>
@@ -263,7 +263,7 @@
 
               $nextTick(() => {
                 $refs.url.select()
-                this.alert = { type: 'success', message: `链接 ${document.execComm和('Copy') ? '复制' : '生成'} ` }
+                this.alert = { type: 'success', message: `链接 ${document.execCommand('Copy') ? '复制' : '生成'} ` }
               })
             })
             .catch(e => {
