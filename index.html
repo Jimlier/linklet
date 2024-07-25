@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="asset/img/favicon.png"  >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>短链生成器</title>
+    <title>短链生成服务</title>
     <style>
       :root {
         --color-primary: #5c7cfa;
@@ -203,7 +203,7 @@
     </style>
   </head>
   <body>
-    <header><h1>短链生成器</h1></header>
+    <header><h1>短链生成服务</h1></header>
     <main x-data="app" x-cloak>
       <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
       <input placeholder="输入要缩短的网址..." x-model="url" x-ref="url" />
